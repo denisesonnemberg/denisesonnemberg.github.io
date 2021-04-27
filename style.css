@@ -86,7 +86,24 @@ div.stamps img {
   animation: spin 30s linear infinite;
 }
 
-.filtered {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+.highlight-marker { 
+  background-image: linear-gradient(to right,transparent 50%,#e05555 100%);
+  background-size: 200% 50%;
+  background-repeat: repeat-x;
+  background-position: -100% 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-decoration: none;
+  color:#222222;
+}
+
+.highlight-marker-yellow { 
+  background-image: linear-gradient(to right,transparent 50%,#ea64ff 100%);
+  background-size: 200% 50%;
+  background-repeat: repeat-x;
+  background-position: -100% 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-decoration: none;
+  color:#222222;
 }

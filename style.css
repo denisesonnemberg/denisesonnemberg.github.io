@@ -44,12 +44,12 @@ header {
 }
 
 header img {
-  width: 250px;
+  width: 450px;
   transition: width 0.5s;
 }
 
 header.scrolled img {
-  width: 150px;
+  width: 250px;
 }
 
 section {
@@ -73,19 +73,6 @@ section img {
   position: relative;
 }
 
-div.stamps {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-}
-
-div.stamps img {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  animation: spin 30s linear infinite;
-}
-
 .highlight-marker { 
   background-image: linear-gradient(to right,transparent 50%,#e05555 100%);
   background-size: 200% 50%;
@@ -106,4 +93,32 @@ div.stamps img {
   padding-right: 4px;
   text-decoration: none;
   color:#222222;
+}
+
+.underlineWavy {
+    color:#2530DA;
+    text-decoration:underline;
+	
+}
+
+a.underlineWavy:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+  display:none;
+  }
 }
